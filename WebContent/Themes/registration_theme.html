@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login Theme</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 		 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ 		 <style>
+  			.bg-1 
+  				{
+      				background-color: #1abc9c;
+      				color: #ffffff;
+ 				 }
+  			.bg-2 
+  			{
+      			background-color:#222220;
+      			color: #ffffff;
+  			}
+  			.bg-3 
+  			{
+     			background-color: #ffffff;
+      			color: #555555;
+ 			 }
+  			.container-fluid 
+  			{
+     			 padding-top: 70px;
+     			 padding-bottom: 70px;
+  			}
+  			.navbar 
+  			{
+    			padding-top: 15px;
+   				padding-bottom: 15px;
+    			border: 0;
+    			border-radius: 0;
+    			margin-bottom: 0;
+    			font-size: 12px;
+    			letter-spacing: 5px;
+			}
+
+			.navbar-nav li a:hover 
+			{
+    			color: #1abc9c !important;
+			}
+			.cont
+			{
+				padding-top:50px;
+				margin-top:20px;
+			}
+  </style>
+  <script type="text/javascript">
+  	function dis(val)
+  	{
+  		if(val=="Student")
+  		{
+  			document.getElementById("designation").style.display="none";
+  			document.getElementById("des").style.display="none";
+  		}
+  	}
+  </script>
+	</head>
+	<body class="bg-1">
+		<nav class="navbar navbar-inverse">
+  			<div class="container">
+    			<div class="navbar-header">
+     				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+      				<a class="navbar-brand" href="#">placement.com</a>
+    			</div>
+  	<div>
+  	<ul class="nav navbar-nav">
+  		<li><a href="#">HOME</a></li>
+      	<li><a href="#">SEMINARS</a></li>
+      	<li><a href="#">JOBS</a></li>
+      	<li><a href="#">FEEDBACK</a></li>
+      </ul>
+  	</div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active" ><a href="#"><span class="glyphicon glyphicon-user"></span> SIGN UP</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+		<div class = "container cont bg-1">
+			<form action="" method="post" role="form" class="form-horizontal">
+			
+				<div class="form-group">
+					<label for="usertype" class="control-label col-sm-2">Sign Up As:</label>
+					<div class="col-sm-6">
+						<select class="form-control" id="usertype" onchange="dis(this.value)">
+							<option>Student</option>
+							<option>Placement Cell Coordinator</option>
+							<option>Faculty Coordinator</option>
+							<option>Recruiter</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="userid" class="control-label col-sm-2" id="uid">User Id:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="userid" placeholder="Enter User ID"  style="display:block">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="name" class="control-label col-sm-2">Name:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="name" placeholder="Enter Your Name">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="Email" class="control-label col-sm-2">Email:</label>
+					<div class="col-sm-6">
+						<input type = "email" class="form-control" id="email" placeholder="Enter Email">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="contact-no" class="control-label col-sm-2">Contact No:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="contact_no" placeholder="Enter Contact Number">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="designation" class="control-label col-sm-2" id="des">Designation:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="designation" placeholder="Enter Designation">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="subject" class="control-label col-sm-2">Subject:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="subject" placeholder="Enter Subject">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="department" class="control-label col-sm-2">Department:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="department" placeholder="Enter Your Department">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="owner" class="control-label col-sm-2">Owner Name:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="owner_name" placeholder="Enter Owner Name">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="url" class="control-label col-sm-2">Website URL:</label>
+					<div class="col-sm-6">
+						<input type = "url" class="form-control" id="website" placeholder="Enter Website">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="course" class="control-label col-sm-2">Course:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="course" placeholder="Enter Your Couse">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="year" class="control-label col-sm-2">Year:</label>
+					<div class="col-sm-6">
+						<input type = "number" class="form-control" id="year" placeholder="Enter Year">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="father_name" class="control-label col-sm-2">Father's Name:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="father" placeholder="Enter Father's Name">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="mothers_name" class="control-label col-sm-2">Mother's Name:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="mother" placeholder="Enter Mother's Name">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="college_name" class="control-label col-sm-2">College Name:</label>
+					<div class="col-sm-6">
+						<input type = "text" class="form-control" id="college" placeholder="Enter Your College Name">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="passing_year" class="control-label col-sm-2">Year of Passing:</label>
+					<div class="col-sm-6">
+						<input type = "number" class="form-control" id="passing_year" placeholder="Year Of Passing">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="percentage" class="control-label col-sm-2">Percentage:</label>
+					<div class="col-sm-6">
+						<input type = "number" class="form-control" id="userid" placeholder="Percentage">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="password" class="control-label col-sm-2">Password:</label>
+					<div class="col-sm-6">
+						<input type = "password" class="form-control" id="password" placeholder="Enter Password">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="password" class="control-label col-sm-2">Password:</label>
+					<div class="col-sm-6">
+						<input type = "password" class="form-control" id="confirm_password" placeholder="Re-enter Password">
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="address" class="control-label col-sm-2">Address:</label>
+					<div class="col-sm-6">
+						<textarea rows="5" cols="40" placeholder="Enter Address" id="address"></textarea>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label for="gender" class="control-label col-sm-2">Gender:</label>
+					<div class="col-sm-6">
+						<div class="radio">
+							<label><input type = "radio" id="male" name ="gender">Male</label>
+						</div>
+						<div class="radio">
+							<label><input type = "radio" id="female" name ="gender">Female</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="checkbox">
+						<div class="col-sm-offset-2 col-sm-6">
+							<label><input type="checkbox">Remember Me</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-6">
+						<button type="submit" class="btn btn-default">Sign Up</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

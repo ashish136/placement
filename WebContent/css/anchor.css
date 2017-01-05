@@ -1,0 +1,48 @@
+/*-----------------main menu-------------------*/
+body.im
+{
+	/*background-image: url("/ediagnostics/image/backwater.jpg");	*/
+	background-color: #e3f2fd;
+	 
+}
+ul.nav1
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top:15px;
+	margin-bottom:15px;
+	overflow: hidden;
+	height:40px
+}
+li.nav2
+{
+	margin-left:20px;
+	text-align: center;
+	text-decoration: none;
+	padding-right:20px;
+	float: left;
+}
+a
+{
+	text-decoration: none;	
+
+}
+
+a:LINK
+{
+	color: #ff0000 ;/*#ff0080;*/
+}
+a:VISITED 
+{
+	color: #990000;
+}
+a:HOVER 
+{
+	background-color: #000000;
+	color:#00b000;
+}
+a:ACTIVE 
+{
+	color:#237834;
+}
